@@ -19,8 +19,8 @@ telefono INT(12)
 
 CREATE TABLE prestamos (
 id INT AUTO_INCREMENT PRIMARY KEY,
-libro_id INT(8),
-socio_id INT(8),
+libro INT(8),
+socio INT(8),
 fecha_prestamo varchar(20),
 fecha_devolucion VARCHAR(20),
 FOREIGN KEY (libro_id) REFERENCES libros(id),
